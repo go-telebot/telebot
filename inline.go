@@ -40,7 +40,7 @@ type QueryResponse struct {
 
 	// (Optional) The maximum amount of time in seconds that the result
 	// of the inline query may be cached on the server.
-	CacheTime int `json:"cache_time,omitempty"`
+	CacheTime *int `json:"cache_time,omitempty"`
 
 	// (Optional) Pass True, if results may be cached on the server side
 	// only for the user that sent the query. By default, results may
